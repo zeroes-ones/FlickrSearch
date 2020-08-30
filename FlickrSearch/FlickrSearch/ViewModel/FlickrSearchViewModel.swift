@@ -12,6 +12,7 @@ import ReactiveSwift
 struct FlickrSearchViewModel {
 
     let searchRequest: FlickrSearchRequest
+    /// Improvement: we can handle the error in a different way to with `Result` too
     var photoList: MutableProperty<[Flickr.Photos]> = MutableProperty([])
     var currentPage: MutableProperty<Int> = MutableProperty(0)
     private var disposableBag = CompositeDisposable()

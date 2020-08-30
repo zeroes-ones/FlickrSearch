@@ -45,6 +45,32 @@ extension PhotosNaviator {
         to destination: Destination,
         type: NavigationType = .push
     ) {
-        
+        guard let viewController = makeViewController(for: destination) else {
+            return
+        }
+        switch type {
+        case .push:
+            guard let navigationController = rootViewController?.navigationController else {
+                self.navigationController = UINavigationController(rootViewController: viewController)
+                rootViewController = viewController
+                return
+            }
+            navigationController.pushViewController(viewController, animated: true)
+        case .present:
+            rootViewController?.present(viewController, animated: true)
+        }
+    }
+}
+
+private extension PhotosNaviator {
+    func makeViewController(
+        for destination: Destination
+    ) -> UIViewController? {
+        switch destination {
+        case let .flickrImageList(viewModel):
+            return FlickrSearchViewController.makeViewController(viewModel: viewModel, navigator: self)
+        case let .photo(photo, imageCache, fullScreen):
+            return UIHostingController(rootView: FlickrImageViewCell(photo: photo, imageCache: imageCache, isFullScreen: fullScreen))
+        }
     }
 }

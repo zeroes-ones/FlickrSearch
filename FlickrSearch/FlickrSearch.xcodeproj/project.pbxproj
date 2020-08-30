@@ -31,6 +31,11 @@
 		2C44064E24FC41810017A44A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44064D24FC41810017A44A /* ActivityIndicator.swift */; };
 		2C44065024FC41AD0017A44A /* FlickrAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44064F24FC41AD0017A44A /* FlickrAPIManager.swift */; };
 		2C44065224FC42380017A44A /* FlickrSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44065124FC42380017A44A /* FlickrSearchViewController.swift */; };
+		2C44065424FC42D70017A44A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44065324FC42D70017A44A /* Coordinator.swift */; };
+		2C44065624FC44E70017A44A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44065524FC44E70017A44A /* UIViewController+Extension.swift */; };
+		2C44065824FC45150017A44A /* SwiftUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44065724FC45150017A44A /* SwiftUICollectionViewCell.swift */; };
+		2C44065A24FC45310017A44A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44065924FC45310017A44A /* UIView+Extension.swift */; };
+		2C44065C24FC45650017A44A /* FlickrImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C44065B24FC45650017A44A /* FlickrImageViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +90,11 @@
 		2C44064D24FC41810017A44A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		2C44064F24FC41AD0017A44A /* FlickrAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPIManager.swift; sourceTree = "<group>"; };
 		2C44065124FC42380017A44A /* FlickrSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrSearchViewController.swift; sourceTree = "<group>"; };
+		2C44065324FC42D70017A44A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		2C44065524FC44E70017A44A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		2C44065724FC45150017A44A /* SwiftUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICollectionViewCell.swift; sourceTree = "<group>"; };
+		2C44065924FC45310017A44A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2C44065B24FC45650017A44A /* FlickrImageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrImageViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +213,7 @@
 				2C44063324FC37CF0017A44A /* AppCoordinator.swift */,
 				2C44063D24FC3BE10017A44A /* SceneCoordinator.swift */,
 				2C44063F24FC3C050017A44A /* MainCoordinator.swift */,
+				2C44065324FC42D70017A44A /* Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -211,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				2C44064924FC412D0017A44A /* URLImage.swift */,
+				2C44065724FC45150017A44A /* SwiftUICollectionViewCell.swift */,
+				2C44065B24FC45650017A44A /* FlickrImageViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				2C44064D24FC41810017A44A /* ActivityIndicator.swift */,
+				2C44065524FC44E70017A44A /* UIViewController+Extension.swift */,
+				2C44065924FC45310017A44A /* UIView+Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -400,10 +415,15 @@
 				2C44064024FC3C050017A44A /* MainCoordinator.swift in Sources */,
 				2C44063424FC37CF0017A44A /* AppCoordinator.swift in Sources */,
 				2C44064224FC3C2B0017A44A /* Navigator.swift in Sources */,
+				2C44065624FC44E70017A44A /* UIViewController+Extension.swift in Sources */,
+				2C44065424FC42D70017A44A /* Coordinator.swift in Sources */,
 				2C44064A24FC412D0017A44A /* URLImage.swift in Sources */,
+				2C44065C24FC45650017A44A /* FlickrImageViewCell.swift in Sources */,
 				2C44060524FC354A0017A44A /* ContentView.swift in Sources */,
+				2C44065824FC45150017A44A /* SwiftUICollectionViewCell.swift in Sources */,
 				2C44064424FC3C440017A44A /* PhotosNavigator.swift in Sources */,
 				2C44063B24FC384E0017A44A /* SearchRequest.swift in Sources */,
+				2C44065A24FC45310017A44A /* UIView+Extension.swift in Sources */,
 				2C44064E24FC41810017A44A /* ActivityIndicator.swift in Sources */,
 				2C44063624FC37E80017A44A /* Constants.swift in Sources */,
 				2C44063824FC38220017A44A /* APIRequest.swift in Sources */,
