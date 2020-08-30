@@ -7,4 +7,4 @@ After downloading the project run `carthage update --platform iOS` in project ro
 
 ### Demo
 
-
+![](https://github.com/zeroes-ones/FlickrSearch/blob/master/demo/Demo.gif)
